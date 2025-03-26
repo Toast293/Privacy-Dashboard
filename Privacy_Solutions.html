@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Challenges Dashboard</title>
+
+     <!-- Liter (GOOGLE FONT)-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+     
+     <!-- Material Icons-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+     
+         <!-- DashboardStyle CSS -->
+          <link rel="stylesheet" href="DashboardStyle.css">
+       </head>
+       <body>
+         <div class="grid-container">
+     
+         <!-- Main Header of Dashboard -->
+          <header class="header">
+             <div class="menu-button" onclick="toggleSidePanel()">
+                 <span class="material-icons-outlined">menu</span>
+             </div>
+             <div class="header-left">
+                 <span class="material-icons-outlined">email</span>
+                 </div>
+          </header>
+     
+          <!-- End Header -->
+     
+          <!-- Side Panel -->
+       <aside id="sidepanel">
+         <div class="sidepanel-title">
+             <div class="sidepanel-brand">
+             <h1>Privacy Dashboard</h1>
+             </div>
+         </div>
+     
+         <ul class="sidepanel-options">
+             <li class="sidepanel-options-item" onclick="location.href='Dashboard.html'">
+                 <span class="material-icons-outlined">home</span>Dashboard
+             </li>
+             <li class="sidepanel-options-item" onclick="location.href='Privacy_Challenges.html'">
+             <span class="material-icons-outlined">security</span>Privacy Challenges
+             </li>
+             <li class="sidepanel-options-item" onclick="location.href='Privacy_Solutions.html'">
+                 <span class="material-icons-outlined">lock</span>Privacy Solutions
+             </li>
+            <li class="sidepanel-options-item" onclick="location.href='Checklist.html'">
+                <span class="material-icons-outlined">checklist</span>Checklist
+            </li>
+            <li class="sidepanel-options-item" onclick="location.href='Quiz.html'">
+              <span class="material-icons-outlined">quiz</span>Quiz
+            </li>    
+         </ul>
+       </aside>
+           
+     
+           <!-- Main Content -->
+            <main class="main container">
+                <div class="main-cards">
+                    <p class="font weight-bold"></p>
+                    </div>
+                    <div class="main-contents"></div>
+                
+                    <h1 class="title" style="text-align: center;">Privacy Solutions for Smart Devices</h1>
+                
+                      <!--- PRIVACY SOLUTIONS CARDS --->
+                        <div class="card-container">
+                            
+                          <div class="card">
+                            <div class="card-inner">
+                                <h2>Use of Strong Passwords and Authentication</h2>
+                              <p>By utilising strong passwords for all the smart devices connected as well as the associated accounts it will help decrease the likelihood of unauthorised users gaining access which is useful. Furthermore, the use of multi-factor authentication is efficient since it helps provide an extra layer of security and is a strong measure to implement.</p>
+                          </div>
+                         </div>
+                
+                          <div class="card">
+                            <div class="card-inner">
+                              <h2>Perform Software Updates Regulary</h2>
+                              <p>By regulary carrying out the neccesary software updates on your smart devices it will help patch any type of vulnerabilites that were known and will help improve security, so ensure smart devices are always up-to-date in terms of software. </p>
+                            </div>
+                          </div>
+                          
+                          <div class="card">
+                            <div class="card-inner">
+                                <h2>Secure Wi-fi Network</h2>
+                                <p>Initally set strong passwords on the Wi-Fi network, create a seperate network simply just for the smart devices which helps them remain seperate from your main devices. this is an efficient method since it prevents the attackers from gaining any further acces to any other devices on the network since the smart devices are isolated.</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="card-container">
+                
+                          <div class="card">
+                            <div class="card-inner">
+                                <h2>Limit Data Collection and Sharing</h2>
+                                <p>Review and change the settings of privacy on the smart devices to be able to limit the amount of data it collects and shares, as well as deactivate any functions that are not in use as well as review the permission granted towards the smart device.</p>
+                             </div>
+                          </div>
+                
+                          <div class="card">
+                            <div class="card-inner">
+                              <h2>Physical Security</h2>
+                              <p>Ensure the smart devices are safe and securee phyiscally as well as are not accessbile towards unauthorised people such as by placing them in out hidden areas or even lockable cases.</p>
+                            </div>
+                          </div>
+                
+                          <div class="card">
+                            <div class="card-inner">
+                              <h2>Remain Informed</h2>
+                              <p>Always try to keep informed of the latest privacy practices that can be performed to imporve the overall security of the smart devices as well as provide and spread awareness to others about the importance of privacy as well as security in terms of smart devices.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <style>
+                            .card {
+                                border: 2px solid rgb(9, 169, 57);/*colour of the border*/
+                            }
+                            .card-inner {
+                                font-size: 1.2em; /* Adjust the font size as needed */
+                            }
+                        </style>
+
+
+            </main>
+         </div>
+          <!-- End Main Content -->
+     
+         <!-- DashboardScripts Java (Allows the HTML to load first then Java)-->
+          <script src="DashboardScripts.js"></script>
+     </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Challenges Dashboard</title>
+
+    <!-- Liter (GOOGLE FONT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+
+<!-- Material Icons-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- DashboardStyle CSS -->
+     <link rel="stylesheet" href="Checklist.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+    <!-- Main Header of Dashboard -->
+     <header class="header">
+        <div class="menu-button" onclick="toggleSidePanel()">
+            <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+            <span class="material-icons-outlined">email</span>
+            </div>
+     </header>
+
+     <!-- End Header -->
+
+     <!-- Side Panel -->
+  <aside id="sidepanel">
+    <div class="sidepanel-title">
+        <div class="sidepanel-brand">
+        <h1>Privacy Dashboard</h1>
+        </div>
+    </div>
+
+    <ul class="sidepanel-options">
+        <li class="sidepanel-options-item" onclick="location.href='Dashboard.html'">
+            <span class="material-icons-outlined">home</span>Dashboard
+        </li>
+        <li class="sidepanel-options-item" onclick="location.href='Privacy_Challenges.html'">
+        <span class="material-icons-outlined">security</span>Privacy Challenges
+        </li>
+        <li class="sidepanel-options-item" onclick="location.href='Privacy_Solutions.html'">
+            <span class="material-icons-outlined">lock</span>Privacy Solutions
+        </li>
+        <li class="sidepanel-options-item" onclick="location.href='Checklist.html'">
+          <span class="material-icons-outlined">checklist</span>Checklist
+        </li>
+        <li class="sidepanel-options-item" onclick="location.href='Quiz.html'">
+            <span class="material-icons-outlined">quiz</span>Quiz
+        </li>
+  
+    </ul>
+  </aside>
+      
+
+      <!-- Main Content -->
+      
+ 
+        <div class="container">
+            <h2>Smart Device Privacy Tips: Your Complete Checklist</h2>
+            <div class="todo"> 
+                <input class="todo__value" type="text" placeholder="Add a new task" value="Utilise strong passwords"> 
+                <input class="todo__checkbox" type="checkbox">
+            </div>
+            <div class="todo"> 
+                <input class="todo__value" type="text" placeholder="Add a new task" value="Regulary check and install updates"> 
+                <input class="todo__checkbox" type="checkbox">
+             </div> 
+             <div class="todo"> 
+                <input class="todo__value" type="text" placeholder="Add a new task" value="Register devices with a dedicated email address"> 
+                <input class="todo__checkbox" type="checkbox">
+             </div> 
+             <div class="todo"> 
+                <input class="todo__value" type="text" placeholder="Add a new task" value="Set up notifications for any unusual activity"> 
+                <input class="todo__checkbox" type="checkbox">
+             </div> 
+             <div class="todo"> 
+                <input class="todo__value" type="text" placeholder="Add a new task" value="Review privacy settings on each smart device"> 
+                <input class="todo__checkbox" type="checkbox">
+             </div> 
+             <div class="todo"> 
+                <input class="todo__value" type="text" placeholder="Add a new task" value="Regular review smart device's permissions"> 
+                <input class="todo__checkbox" type="checkbox">
+             </div> 
+             <div class="todo"> 
+                <input class="todo__value" type="text" placeholder="Add a new task" value="Turn off recording features if not needed"> 
+                <input class="todo__checkbox" type="checkbox">
+             </div> 
+      
+        
+        
+       <!-- End Main Content -->
+
+    </div>
+
+  
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.3.0/apexcharts.min.js"></script>
+
+    <!-- DashboardScripts Java (Allows the HTML to load first then Java)-->
+     <script src="DashboardScripts.js"></script>
+</html>

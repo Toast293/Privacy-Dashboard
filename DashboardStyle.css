@@ -1,0 +1,216 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(12, 12, 12);
+    background-color: rgb(252, 248, 248);
+    font-family: "Liter", sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    "sidepanel header header header"
+    "sidepanel maincontainer maincontainer maincontainer";
+    height: 100vh;
+    
+}
+
+/* ------- MAIN HEADER ------- */
+.header {
+    grid-area: header;
+    height: 50px;
+    background-color: rgb(159, 212, 243);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 7px 8px -4px rgba(0,0,0,0.2);
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* ------- SIDEPANEL ------- */
+#sidepanel {
+    grid-area: sidepanel;
+    height: 100px;
+    background-color: #21232d;
+    color: #f6f6f8;
+    height: 250vh; /* 150 */
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    font-size: 20px;
+}
+
+.sidepanel-title{
+justify-content: space-between;
+display: flex;
+align-items: center;
+padding: 20px 20px 20px 20px;
+margin-bottom: 30px;
+}
+
+.sidepanel_title > span {
+    display: none;
+}
+
+.sidepanel-brand{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sidepanel-options{
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
+
+}
+
+.sidepanel-options-item {
+    padding: 10px 10px 10px 10px;
+}
+
+.sidepanel-options-item {
+    font-size: 20px;
+}
+
+.sidepanel-options-item:hover {
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer; 
+
+    }
+    
+    .sidepanel-responsive {
+        display: inline !important;
+        position: absolute;
+    }
+   
+
+/* ------- MAIN ------- */
+.main-container {
+    grid-area: maincontainer;
+    background-color: rgb(250, 250, 249);
+    overflow-y: auto;
+    padding: 10px 10px;
+
+}
+
+.email {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.main-text {
+    font-size: 20px;
+    text-shadow: blue;
+}
+
+
+table {
+    margin-left: 10px;
+    height: min-content;
+    margin: 0 10px;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 7px 8px -4px rgba(0,0,0,0.2);
+    font-size: medium;
+}
+
+th, caption{
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 2px;
+    align-items: center;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+}
+.main-title > p {
+    font-size: 20px;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .card {
+    flex: 1;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  .card-inner {
+    text-align: center;
+  }
+
+
+
+
+
+#bar-chart {
+    width: calc(108% - 260px); /* Adjust the width to exclude the side panel */
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 40px;
+}
+
+  .charts-title {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+  }
+
+.table1-text {
+    text-align: left;
+    font-size: 20px;
+
+}
+.table2-text {
+    text-align: left;
+    font-size: 20px;
+}
+
+/*---- Additional Content ----*/
+
+.additional-content {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/*----- Pie chart -----*/
+
+
+

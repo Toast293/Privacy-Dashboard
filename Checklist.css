@@ -1,0 +1,140 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(12, 12, 12);
+    background-color: rgb(252, 248, 248);
+    font-family: "Liter", sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    "sidepanel header header header"
+    "sidepanel maincontainer maincontainer maincontainer";
+    height: 100vh;
+    
+}
+
+/* ------- MAIN HEADER ------- */
+.header {
+    grid-area: header;
+    height: 50px;
+    background-color: rgb(159, 212, 243);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 7px 8px -4px rgba(0,0,0,0.2);
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* ------- SIDEPANEL ------- */
+#sidepanel {
+    grid-area: sidepanel;
+    height: 100px;
+    background-color: #21232d;
+    color: #f6f6f8;
+    height: 150vh;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.sidepanel-title{
+justify-content: space-between;
+display: flex;
+align-items: center;
+padding: 20px 20px 20px 20px;
+margin-bottom: 30px;
+}
+
+.sidepanel_title > span {
+    display: none;
+}
+
+.sidepanel-brand{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sidepanel-options{
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
+
+}
+
+.sidepanel-options-item {
+    font-size: 20px;
+}
+
+.sidepanel-options-item {
+    padding: 10px 10px 10px 10px;
+}
+
+.sidepanel-options-item:hover {
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer; 
+
+    }
+    
+    .sidepanel-responsive {
+        display: inline !important;
+        position: absolute;
+    }
+
+
+    h2 {
+        color: black
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-top: 10px solid lightblue;
+        border-bottom: 10px solid lightblue;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        margin: 0 auto;
+        width: 30%;
+        height: 50%;
+    }
+    
+    .todo {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    
+    .todo__value {
+        display: flex;
+         background: transparent;
+         border: none;
+         outline: none;
+         font-family: "Liter", sans-serif;
+         font-size: 20px;
+         font-weight: bold;
+         flex-grow: 1;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .todo:has(.todo__checkbox:checked) {
+        display: flex;
+        color: black;
+        background-color: rgb(173, 172, 172);
+        text-decoration: line-through;
+        order: 1;
+    }
+
+   

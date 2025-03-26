@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Challenges Dashboard</title>
+
+    <!-- Liter (GOOGLE FONT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- DashboardStyle CSS -->
+    <link rel="stylesheet" href="DashboardStyle.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Main Header of Dashboard -->
+      <header class="header">
+        <div class="menu-button">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">email</span>
+        </div>
+      </header>
+
+      <!-- End Header -->
+
+      <!-- Side Panel -->
+      <aside id="sidepanel">
+        <div class="sidepanel-title">
+          <div class="sidepanel-brand">
+            <h1>Privacy Dashboard</h1>
+          </div>
+        </div>
+
+        <ul class="sidepanel-options">
+          <li
+            class="sidepanel-options-item"
+            onclick="location.href='Dashboard.html'"
+          >
+            <span class="material-icons-outlined">home</span>Dashboard
+          </li>
+          <li
+            class="sidepanel-options-item"
+            onclick="location.href='Privacy_Challenges.html'"
+          >
+            <span class="material-icons-outlined">security</span>Privacy
+            Challenges
+          </li>
+          <li
+            class="sidepanel-options-item"
+            onclick="location.href='Privacy_Solutions.html'"
+          >
+            <span class="material-icons-outlined">lock</span>Privacy Solutions
+          </li>
+          <li
+            class="sidepanel-options-item"
+            onclick="location.href='Checklist.html'"
+          >
+            <span class="material-icons-outlined">checklist</span>Checklist
+          </li>
+          <li
+            class="sidepanel-options-item"
+            onclick="location.href='Quiz.html'"
+          >
+            <span class="material-icons-outlined">quiz</span>Quiz
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main container">
+        <div class="main-cards">
+          <p class="font weight-bold"></p>
+        </div>
+        <div class="main-contents"></div>
+
+        <h1 class="email">
+          Hello users, if you have any queries or wish to provide feedback, my
+          email is 22503437@stu.mmu.ac.uk
+        </h1>
+
+        <!--- PRIVACY TESTS TABLE --->
+        <div class="card-container">
+          <div class="card">
+            <div class="card-inner">
+              <div class="table-container">
+                <table>
+                  <caption
+                    style="
+                      text-align: center;
+                      font-size: 1.25em;
+                      font-weight: bold;
+                    "
+                  >
+                    Privacy Tests
+                  </caption>
+                  <tr>
+                    <th>Device Type:</th>
+                    <th>Name:</th>
+                    <th>Privacy Score:</th>
+                    <th>Data Security:</th>
+                  </tr>
+                  <tr>
+                    <td>Smart Speaker</td>
+                    <td>Amazon Echo Pop</td>
+                    <td>45%</td>
+                    <td>3/5</td>
+                  </tr>
+                  <tr>
+                    <td>Smart Speaker</td>
+                    <td>Google Nest Mini 2</td>
+                    <td>41%</td>
+                    <td>3/5</td>
+                  </tr>
+                  <tr>
+                    <td>Smart Airfryer</td>
+                    <td>Xiaomi Mi Smart</td>
+                    <td>47%</td>
+                    <td>3/5</td>
+                  </tr>
+                  <tr>
+                    <td>Smart TV</td>
+                    <td>LG 43UR78006LK</td>
+                    <td>50%</td>
+                    <td>4/5</td>
+                  </tr>
+                  <tr>
+                    <td>Smart Watch</td>
+                    <td>Huawei Ultimate</td>
+                    <td>37%</td>
+                    <td>3/5</td>
+                  </tr>
+                </table>
+                <p class="table1-text">
+                  These device have been tested in terms of privacy and based on
+                  multiple factors such as security of data, consent, removal of
+                  data and more.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- END OF MY PRIVACY TESTS TABLE -->
+
+          <div class="card">
+            <div class="card-inner">
+              <h1>Welcome to the Dashboard</h1>
+              <p class="main-text">
+                This dashboard provides insights into various areas such as
+                permissons, data collection and most importantly privacy.
+                Navigate through the side panel to explore different sections.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <table>
+                <caption
+                  style="
+                    text-align: center;
+                    font-size: 1.25em;
+                    font-weight: bold;
+                  "
+                >
+                  Requested Permissions
+                </caption>
+                <tr>
+                  <th>Device Type:</th>
+                  <th>Name:</th>
+                  <th>Phone Number:</th>
+                  <th>Address:</th>
+                  <th>Email:</th>
+                </tr>
+                <tr>
+                  <td>Amazon Echo Speaker</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Google Nest Camera</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>LG washing Machine</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Huawei SmartWatch</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Amazon Ring Doorbell</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                </tr>
+              </table>
+              <p class="table2-text">
+                This table display the permission requested by the listed smart
+                devices, the most important factor to keep in mind is, the more
+                permission a device has, the higher the risk if the device is
+                attacked.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BAR CHART ANALYSIS OF SMART HOME DEVICES -->
+        <div class="charts"></div>
+
+        <div class="chart-contents"></div>
+        <h2 class="charts-title">Analysis of Smart Home Devices Apps</h2>
+        <div id="bar-chart"></div>
+
+        <p class="additional-content">
+          This Bar Chart presents the amount of data types associated with
+          personal information that are collected by smart devices such as name,
+          address, email, phone number etc. Furthermore, the maximum amount of
+          data types is 32, which signifies the figures gathered from the smart
+          devices shown above.
+        </p>
+
+        <div
+          id="additional-box"
+          style="
+            border: 1px solid #ccc;
+            height: 700px;
+            width: 50%;
+            margin-top: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-left: 40px;
+          "
+        >
+          <h2 style="text-align: center; margin-top: 2px">
+            Privacy Polices of Smart Devices
+          </h2>
+          <div
+            id="pie-chart"
+            style="
+              height: 90%;
+              font-size: 20px;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          ></div>
+        </div>
+        <p
+          style="
+            text-align: left;
+            margin-top: 10px;
+            font-size: 20px;
+            margin-left: 160px;
+          "
+        >
+          This pie chart represents the distribution of privacy policies among
+          various smart devices.
+        </p>
+
+        <!-- Apex Charts-->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+        <script>
+          // Pie chart data and configuration
+          var options = {
+            chart: {
+              type: "pie",
+              height: "100%",
+              dataLabels: {
+                enabled: true,
+                formatter: function (val, opts) {
+                  return opts.w.globals.labels[opts.seriesIndex];
+                },
+              },
+            },
+            series: [532, 603, 275, 43, 344],
+            labels: [
+              "Smart Camera",
+              "Smart Speaker",
+              "Smart TV",
+              "Smart Air Purifer",
+              "Smart Doorbell",
+            ],
+            dataLabels: {
+              style: {
+                fontSize: 25,
+              },
+            },
+            responsive: [
+              {
+                breakpoint: 480,
+                options: {
+                  chart: {
+                    width: 200,
+                  },
+                  legend: {
+                    position: "bottom",
+                  },
+                },
+              },
+            ],
+          };
+          options.chart.width = "100%";
+          options.chart.height = "90%";
+          options.plotOptions = {
+            pie: {
+              dataLabels: {
+                offset: -1,
+                minAngleToShowLabel: 1,
+              },
+            },
+          };
+          var chart = new ApexCharts(
+            document.querySelector("#pie-chart"),
+            options
+          );
+          chart.render();
+        </script>
+      </main>
+
+      <!-- End Main Content -->
+    </div>
+
+    <!-- Scripts-->
+    <!-- DashboardScripts Java (Allows the HTML to load first then Java)-->
+    <script src="DashboardScripts.js"></script>
+  </body>
+</html>

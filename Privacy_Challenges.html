@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Challenges Dashboard</title>
+
+    <!-- Liter (GOOGLE FONT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+
+<!-- Material Icons-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- DashboardStyle CSS -->
+     <link rel="stylesheet" href="DashboardStyle.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+    <!-- Main Header of Dashboard -->
+     <header class="header">
+        <div class="menu-button" onclick="toggleSidePanel()">
+            <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+            <span class="material-icons-outlined">email</span>
+            </div>
+     </header>
+
+     <!-- End Header -->
+
+     <!-- Side Panel -->
+  <aside id="sidepanel">
+    <div class="sidepanel-title">
+        <div class="sidepanel-brand">
+        <h1>Privacy Dashboard</h1>
+        </div>
+    </div>
+
+    <ul class="sidepanel-options">
+        <li class="sidepanel-options-item" onclick="location.href='Dashboard.html'">
+            <span class="material-icons-outlined">home</span>Dashboard
+        </li>
+        <li class="sidepanel-options-item" onclick="location.href='Privacy_Challenges.html'">
+        <span class="material-icons-outlined">security</span>Privacy Challenges
+        </li>
+        <li class="sidepanel-options-item" onclick="location.href='Privacy_Solutions.html'">
+            <span class="material-icons-outlined">lock</span>Privacy Solutions
+        </li>
+        <li class="sidepanel-options-item" onclick="location.href='Checklist.html'">
+          <span class="material-icons-outlined">checklist</span>Checklist
+        </li>
+        <li class="sidepanel-options-item" onclick="location.href='Quiz.html'">
+          <span class="material-icons-outlined">quiz</span>Quiz
+        </li>
+
+    </ul>
+  </aside>
+      
+
+      <!-- Main Content -->
+       <main class="main container">
+       <div class="main-cards">
+    <p class="font weight-bold"></p>
+    </div>
+    <div class="main-contents"></div>
+
+    <h1 class="title" style="text-align: center;">Most Common Privacy Challenges of Smart Devices</h1>
+
+      <!--- PRIVACY CHALLENGES CARDS --->
+        <div class="card-container">
+            
+          <div class="card">
+            <div class="card-inner">
+                <h2>Deficiency of Security</h2>
+              <p>Loads of smart devices contain not much security measures, such as authentication and encrpytion of data, in some cases, these smart devices do contain the neccessary security measures however by default, they are not enabled which leave these smart devices in a vulnerable state which leads to potential attacks.</p>
+           </div>
+         </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>Listening and Recording</h2>
+              <p>Smart Devices such as home hubs, smart speakers and cameras, do contain recording and listening features which are enabled already by default. This suggests that everything that is said is being recorded which results in issues such as unauthorised recording and eavesdropping.</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+                <h2>Not Enough User Control</h2>
+                <p>Many types of users find it rather difficult to be able to navigate and locate privacy settings and be in control of what types of data are collected and shared across. This insufficient amount of transpareny can leads to privacy-related breaches as well as data exposure unintentionally.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+
+          <div class="card">
+            <div class="card-inner">
+                <h2>Collection of Data</h2>
+                <p>Smart devices always collected data overtime about the user's preferences and possibly location. This data that is collected usually gets shared to third parties such as adverties and data brokers. However, users possibly are not aware of who does have access to their data and mainly how is their data being utilised.</p>
+             </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>Psychological Impact</h2>
+              <p>This can arise from continuously being monitored from smart devices colleting data as well as from suveilance, which can possibly affect's the user's faith in smart technology due to feeling not safe from having thoughts and questions to do with privacy rights, regulations and more.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>Vulerability to Unauthorised Access</h2>
+              <p>Smart devices can definetly be targets towards unauthorised users such as cybercriminals and hackers. They can exploit these vulnrabilites associated with smart devices can potentially gain access to personal data stored, as well as be able to takeover control of a smart device and possibly utilise the smart device as an gateway to the network connected.</p>
+            </div>
+          </div>
+        </div>
+
+    <style>
+      .card {
+         border: 2px solid red;
+     }
+        .card-inner p {
+        font-size: 1.2em; /* Increase the font size */
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+    </style>
+    
+
+      
+        
+        </main>
+       <!-- End Main Content -->
+
+    </div>
+
+  
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.3.0/apexcharts.min.js"></script>
+
+    <!-- DashboardScripts Java (Allows the HTML to load first then Java)-->
+     <script src="DashboardScripts.js"></script>
+</html>
